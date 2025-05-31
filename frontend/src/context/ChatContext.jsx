@@ -24,7 +24,7 @@ export const ChatProvider = ({ children }) => {
     useEffect(() => {
       if (!selectedMood) return;
 
-        axios.post("http://localhost:5000/api/response",{mood : selectedMood.name})
+        axios.post("https://soulmegle-chatbot-backend.onrender.com/api/response",{mood : selectedMood.name})
             .then((response) => {
                 setMessage(response.data.message);
                 setSelectedMood(response.data.mood);
@@ -48,7 +48,7 @@ export const ChatProvider = ({ children }) => {
     
     
     try {
-      const response = await axios.post("http://localhost:5000/api/response", { mood: selectedMood.name });
+      const response = await axios.post("https://soulmegle-chatbot-backend.onrender.com/api/response", { mood: selectedMood.name });
       console.log("Received API response:", response.data);
 
       await new Promise(resolve => setTimeout(resolve, 800));
