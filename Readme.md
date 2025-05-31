@@ -43,29 +43,36 @@ cd ../frontend && npm install
 ```
 
 2. **Setup Backend:**
+```bash
 cd backend
 npm install
+```
 
 3. **Setup Frontend:**
+```bash
 cd ../frontend
 npm install
+```
 
 
 ### Running the Application
 
 1. **Start Backend Server**
+```bash
 cd backend
 npm start
+```
 
 
 2. **Start Frontend Server**
+```bash
 cd ../frontend
 npm start
-
+```
 
 ### API Endpoint
 
-- POST /api/response
+- POST: /api/response
 
 
 
